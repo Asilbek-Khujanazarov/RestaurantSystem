@@ -1,0 +1,434 @@
+{
+  "Version": 1,
+  "Hash": "QHvtAkbM3ojiOpLcEcv/dcYyfb5FDxNTKCfI/Ds4PRg=",
+  "Source": "RestaranSystem",
+  "BasePath": "_content/RestaranSystem",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RestaranSystem\\wwwroot",
+      "Source": "RestaranSystem",
+      "ContentRoot": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\",
+      "BasePath": "_content/RestaranSystem",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\5db59241-0d20-44ef-9dc4-a23a62fa7d06_Screenshot 2024-10-24 111358.png",
+      "SourceId": "RestaranSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\",
+      "BasePath": "_content/RestaranSystem",
+      "RelativePath": "images/5db59241-0d20-44ef-9dc4-a23a62fa7d06_Screenshot 2024-10-24 111358#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nvjp2xj98o",
+      "Integrity": "HfkU9TjsfuDCZkpS6zcimUA7Nst57INwy219lhzZY0A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\5db59241-0d20-44ef-9dc4-a23a62fa7d06_Screenshot 2024-10-24 111358.png"
+    },
+    {
+      "Identity": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\a6b32885-9e98-43d8-a77d-f62692fe0e53_Screenshot 2024-10-24 111358.png",
+      "SourceId": "RestaranSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\",
+      "BasePath": "_content/RestaranSystem",
+      "RelativePath": "images/a6b32885-9e98-43d8-a77d-f62692fe0e53_Screenshot 2024-10-24 111358#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nvjp2xj98o",
+      "Integrity": "HfkU9TjsfuDCZkpS6zcimUA7Nst57INwy219lhzZY0A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\a6b32885-9e98-43d8-a77d-f62692fe0e53_Screenshot 2024-10-24 111358.png"
+    },
+    {
+      "Identity": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\ce476ab9-966e-4762-8375-b2f4366bf152_Screenshot (2).png",
+      "SourceId": "RestaranSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\",
+      "BasePath": "_content/RestaranSystem",
+      "RelativePath": "images/ce476ab9-966e-4762-8375-b2f4366bf152_Screenshot (2)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i1pmtj762g",
+      "Integrity": "RoGCxi30C0EgAzASSdaRaGIOXDNRGPtvu135tySRNRM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\ce476ab9-966e-4762-8375-b2f4366bf152_Screenshot (2).png"
+    },
+    {
+      "Identity": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\Screenshot (3).png",
+      "SourceId": "RestaranSystem",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\",
+      "BasePath": "_content/RestaranSystem",
+      "RelativePath": "images/Screenshot (3)#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gzs7ja2fhh",
+      "Integrity": "fMm/0sk2k/1FzSLgL8j7gipVXD7HD04lSh3RcXsJBT8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Screenshot (3).png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/5db59241-0d20-44ef-9dc4-a23a62fa7d06_Screenshot 2024-10-24 111358.nvjp2xj98o.png",
+      "AssetFile": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\5db59241-0d20-44ef-9dc4-a23a62fa7d06_Screenshot 2024-10-24 111358.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44278"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HfkU9TjsfuDCZkpS6zcimUA7Nst57INwy219lhzZY0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 17:14:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nvjp2xj98o"
+        },
+        {
+          "Name": "label",
+          "Value": "images/5db59241-0d20-44ef-9dc4-a23a62fa7d06_Screenshot 2024-10-24 111358.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HfkU9TjsfuDCZkpS6zcimUA7Nst57INwy219lhzZY0A="
+        }
+      ]
+    },
+    {
+      "Route": "images/5db59241-0d20-44ef-9dc4-a23a62fa7d06_Screenshot 2024-10-24 111358.png",
+      "AssetFile": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\5db59241-0d20-44ef-9dc4-a23a62fa7d06_Screenshot 2024-10-24 111358.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44278"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HfkU9TjsfuDCZkpS6zcimUA7Nst57INwy219lhzZY0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 17:14:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HfkU9TjsfuDCZkpS6zcimUA7Nst57INwy219lhzZY0A="
+        }
+      ]
+    },
+    {
+      "Route": "images/a6b32885-9e98-43d8-a77d-f62692fe0e53_Screenshot 2024-10-24 111358.nvjp2xj98o.png",
+      "AssetFile": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\a6b32885-9e98-43d8-a77d-f62692fe0e53_Screenshot 2024-10-24 111358.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44278"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HfkU9TjsfuDCZkpS6zcimUA7Nst57INwy219lhzZY0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 17:09:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "nvjp2xj98o"
+        },
+        {
+          "Name": "label",
+          "Value": "images/a6b32885-9e98-43d8-a77d-f62692fe0e53_Screenshot 2024-10-24 111358.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HfkU9TjsfuDCZkpS6zcimUA7Nst57INwy219lhzZY0A="
+        }
+      ]
+    },
+    {
+      "Route": "images/a6b32885-9e98-43d8-a77d-f62692fe0e53_Screenshot 2024-10-24 111358.png",
+      "AssetFile": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\a6b32885-9e98-43d8-a77d-f62692fe0e53_Screenshot 2024-10-24 111358.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "44278"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HfkU9TjsfuDCZkpS6zcimUA7Nst57INwy219lhzZY0A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 17:09:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HfkU9TjsfuDCZkpS6zcimUA7Nst57INwy219lhzZY0A="
+        }
+      ]
+    },
+    {
+      "Route": "images/ce476ab9-966e-4762-8375-b2f4366bf152_Screenshot (2).i1pmtj762g.png",
+      "AssetFile": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\ce476ab9-966e-4762-8375-b2f4366bf152_Screenshot (2).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "954730"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RoGCxi30C0EgAzASSdaRaGIOXDNRGPtvu135tySRNRM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 16:56:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i1pmtj762g"
+        },
+        {
+          "Name": "label",
+          "Value": "images/ce476ab9-966e-4762-8375-b2f4366bf152_Screenshot (2).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RoGCxi30C0EgAzASSdaRaGIOXDNRGPtvu135tySRNRM="
+        }
+      ]
+    },
+    {
+      "Route": "images/ce476ab9-966e-4762-8375-b2f4366bf152_Screenshot (2).png",
+      "AssetFile": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\ce476ab9-966e-4762-8375-b2f4366bf152_Screenshot (2).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "954730"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RoGCxi30C0EgAzASSdaRaGIOXDNRGPtvu135tySRNRM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 16:56:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RoGCxi30C0EgAzASSdaRaGIOXDNRGPtvu135tySRNRM="
+        }
+      ]
+    },
+    {
+      "Route": "images/Screenshot (3).gzs7ja2fhh.png",
+      "AssetFile": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\Screenshot (3).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "240258"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fMm/0sk2k/1FzSLgL8j7gipVXD7HD04lSh3RcXsJBT8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 16:43:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gzs7ja2fhh"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Screenshot (3).png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fMm/0sk2k/1FzSLgL8j7gipVXD7HD04lSh3RcXsJBT8="
+        }
+      ]
+    },
+    {
+      "Route": "images/Screenshot (3).png",
+      "AssetFile": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\Screenshot (3).png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "240258"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fMm/0sk2k/1FzSLgL8j7gipVXD7HD04lSh3RcXsJBT8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 16:43:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fMm/0sk2k/1FzSLgL8j7gipVXD7HD04lSh3RcXsJBT8="
+        }
+      ]
+    }
+  ]
+}

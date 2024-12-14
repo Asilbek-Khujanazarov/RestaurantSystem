@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\5db59241-0d20-44ef-9dc4-a23a62fa7d06_Screenshot 2024-10-24 111358.png",
+      "PackagePath": "staticwebassets\\images\\5db59241-0d20-44ef-9dc4-a23a62fa7d06_Screenshot 2024-10-24 111358.png"
+    },
+    {
+      "Id": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\Screenshot (3).png",
+      "PackagePath": "staticwebassets\\images\\Screenshot (3).png"
+    },
+    {
+      "Id": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\a6b32885-9e98-43d8-a77d-f62692fe0e53_Screenshot 2024-10-24 111358.png",
+      "PackagePath": "staticwebassets\\images\\a6b32885-9e98-43d8-a77d-f62692fe0e53_Screenshot 2024-10-24 111358.png"
+    },
+    {
+      "Id": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\ce476ab9-966e-4762-8375-b2f4366bf152_Screenshot (2).png",
+      "PackagePath": "staticwebassets\\images\\ce476ab9-966e-4762-8375-b2f4366bf152_Screenshot (2).png"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.RestaranSystem.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.RestaranSystem.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.RestaranSystem.props",
+      "PackagePath": "build\\RestaranSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.RestaranSystem.props",
+      "PackagePath": "buildMultiTargeting\\RestaranSystem.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.RestaranSystem.props",
+      "PackagePath": "buildTransitive\\RestaranSystem.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

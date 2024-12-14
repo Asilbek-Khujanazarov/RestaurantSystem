@@ -1,0 +1,76 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5db59241-0d20-44ef-9dc4-a23a62fa7d06_Screenshot 2024-10-24 111358.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RestaranSystem</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RestaranSystem</BasePath>
+      <RelativePath>images/5db59241-0d20-44ef-9dc4-a23a62fa7d06_Screenshot 2024-10-24 111358.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>nvjp2xj98o</Fingerprint>
+      <Integrity>HfkU9TjsfuDCZkpS6zcimUA7Nst57INwy219lhzZY0A=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\5db59241-0d20-44ef-9dc4-a23a62fa7d06_Screenshot 2024-10-24 111358.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a6b32885-9e98-43d8-a77d-f62692fe0e53_Screenshot 2024-10-24 111358.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RestaranSystem</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RestaranSystem</BasePath>
+      <RelativePath>images/a6b32885-9e98-43d8-a77d-f62692fe0e53_Screenshot 2024-10-24 111358.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>nvjp2xj98o</Fingerprint>
+      <Integrity>HfkU9TjsfuDCZkpS6zcimUA7Nst57INwy219lhzZY0A=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\a6b32885-9e98-43d8-a77d-f62692fe0e53_Screenshot 2024-10-24 111358.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ce476ab9-966e-4762-8375-b2f4366bf152_Screenshot (2).png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RestaranSystem</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RestaranSystem</BasePath>
+      <RelativePath>images/ce476ab9-966e-4762-8375-b2f4366bf152_Screenshot (2).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>i1pmtj762g</Fingerprint>
+      <Integrity>RoGCxi30C0EgAzASSdaRaGIOXDNRGPtvu135tySRNRM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\ce476ab9-966e-4762-8375-b2f4366bf152_Screenshot (2).png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Screenshot (3).png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>RestaranSystem</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/RestaranSystem</BasePath>
+      <RelativePath>images/Screenshot (3).png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>gzs7ja2fhh</Fingerprint>
+      <Integrity>fMm/0sk2k/1FzSLgL8j7gipVXD7HD04lSh3RcXsJBT8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\Screenshot (3).png'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>
