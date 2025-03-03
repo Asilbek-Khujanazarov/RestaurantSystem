@@ -10,7 +10,7 @@ namespace RestaurantManagementSystem.Domain.Entities
         public string Name { get; set; } = string.Empty;
         public bool IsPresent { get; set; } = true;
         [Required]
-        public string Type { get; set; }
+        public int CategorieId { get; set; }
         public bool Considered { get; set; }
         public double? QuantityProduct { get; set; } = null;
 
@@ -25,5 +25,10 @@ namespace RestaurantManagementSystem.Domain.Entities
             get => string.IsNullOrEmpty(SizesJson) ? new List<KeyValuePair<string, decimal>>() : JsonSerializer.Deserialize<List<KeyValuePair<string, decimal>>>(SizesJson);
             set => SizesJson = JsonSerializer.Serialize(value);
         }
+
+
+        // Rasmlar ro'yxati
+        public List<string> ImageUrls { get; set; } = new List<string>();
+        public Categorie Categorie {get; set;}
     }
 }

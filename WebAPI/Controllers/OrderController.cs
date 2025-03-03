@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RestaurantManagementSystem.Domain.Entities;
 using RestaurantManagementSystem.infrastructure.Data;
+using Stripe;
 
 namespace RestaurantManagementSystem.WebAPI.Controllers
 {
@@ -58,7 +59,7 @@ namespace RestaurantManagementSystem.WebAPI.Controllers
                     Price = price,
                     OrderId = order.Id,
                     CustomId = order.CustomId
-                    
+
                 });
                 if ((menu.QuantityProduct < 1 && menu.Considered == true) || menu.IsPresent == false)
                 {
@@ -74,7 +75,7 @@ namespace RestaurantManagementSystem.WebAPI.Controllers
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
 
-            return Ok(new { message = "Order created successfully", orderId = order.Id, customerId = order.CustomId });
+            return Ok(new { message = "Order created successfully", NavbatRaqam = order.Id, customerId = order.CustomId, totalOrderPrice = order.TotalPrice });
         }
         private string Generate5DigitId()
         {
@@ -88,6 +89,63 @@ namespace RestaurantManagementSystem.WebAPI.Controllers
 
             return newId.ToString();
         }
+
+        [HttpPost("ProcessPayment")]
+        public async Task<IActionResult> ProcessPayment([FromBody] PaymentRequest request)
+        {
+            // CustomId orqali orderni qidirish
+            var order = await _context.Orders.FirstOrDefaultAsync(o => o.CustomId == request.CustomId);
+            if (order == null)
+            {
+                return BadRequest("Order not found.");
+            }
+
+            // TotalPrice ni olish
+            var totalPrice = order.TotalPrice;
+
+            // Stripe API orqali to'lovni amalga oshirish
+            var options = new ChargeCreateOptions
+            {
+                Amount = (long)(totalPrice * 100), // Stripe faqat to'lovni centlarda qabul qiladi
+                Currency = "usd", // Valyuta
+                Description = $"Payment for Order #{order.CustomId}",
+                Source = request.PaymentMethodId // Stripe PaymentMethodId
+            };
+
+            var service = new ChargeService();
+            try
+            {
+                var charge = await service.CreateAsync(options);
+
+                // Agar to'lov muvaffaqiyatli bo'lsa, orderni "Paid" deb belgilash
+                order.Paid = true;
+                await _context.SaveChangesAsync();
+
+                return Ok(new { message = "Payment successful", orderId = order.Id, totalPrice = totalPrice });
+            }
+            catch (StripeException ex)
+            {
+                return BadRequest($"Payment failed: {ex.Message}");
+            }
+        }
+
+
+
+        [HttpPut("[Action]")]
+        public async Task<IActionResult> ConfirmPayment(int orderId)
+        {
+            var order = await _context.Orders.FirstOrDefaultAsync(o => o.CustomId == orderId);
+            if (order == null)
+            {
+                return BadRequest("Order not found.");
+            }
+
+            order.Paid = true; // Mark as paid
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Payment confirmed", orderId = order.CustomId });
+        }
+
 
 
         [HttpGet("[Action]/id")]
@@ -196,7 +254,7 @@ namespace RestaurantManagementSystem.WebAPI.Controllers
         [HttpDelete("[Action]")]
         public async Task<IActionResult> DeleteOrder(int id)
         {
-            var delOrder = await _context.Orders.FirstOrDefaultAsync(o=> o.CustomId == id);
+            var delOrder = await _context.Orders.FirstOrDefaultAsync(o => o.CustomId == id);
             if (delOrder == null)
             {
                 return NotFound("Buyurtmangiz topilmadi");
@@ -215,13 +273,13 @@ namespace RestaurantManagementSystem.WebAPI.Controllers
         [HttpDelete("[Action]")]
         public async Task<IActionResult> DeletePreparedOrder(int id)
         {
-            var delPreparedOrder = await _context.Orders.FirstOrDefaultAsync(o=> o.CustomId == id);
+            var delPreparedOrder = await _context.Orders.FirstOrDefaultAsync(o => o.CustomId == id);
             if (delPreparedOrder == null)
             {
                 return NotFound("Buyurtmangiz topilmadi");
             };
             var archivedOrder = new ArchevedOrder
-            {                
+            {
                 OrderName = delPreparedOrder.OrderName,
                 TotalPrice = delPreparedOrder.TotalPrice,
                 OrderDate = delPreparedOrder.OrderDate,
@@ -238,30 +296,7 @@ namespace RestaurantManagementSystem.WebAPI.Controllers
         }
 
         [HttpPost("[Action]")]
-        [Authorize(Roles = "Staff,GeniralStaff")]
-        public IActionResult SetProcessTrue(int id)
-        {
-            try
-            {
-                var order = _context.Orders.FirstOrDefault(o => o.Id == id);
-
-                if (order == null)
-                {
-                    return NotFound($"ID = {id} bo'lgan buyurtma topilmadi.");
-                }
-                order.Process = false;
-                _context.SaveChanges();
-
-                return Ok($"Order ID = {id} ga Tayyorlanyabdi.");
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Serverda xatolik yuz berdi: {ex.Message}");
-            }
-        }
-
-        [HttpPost("[Action]")]
-        [Authorize(Roles = "Staff,GeniralStaff")]
+        // [Authorize(Roles = "Staff,GeniralStaff")]
         public IActionResult SetPreparedTrue(int id)
         {
             try
@@ -282,28 +317,38 @@ namespace RestaurantManagementSystem.WebAPI.Controllers
                 return StatusCode(500, $"Serverda xatolik yuz berdi: {ex.Message}");
             }
         }
-        //Kutilyotganlar 
-        [HttpGet("[Action]")]
-        public IActionResult GetExpectedingOrders()
-        {
-            try
-            {
-                var expectedingOrders = _context.Orders.Where(o => o.Process == null).ToList();
-                var orderIds = expectedingOrders.Select(o => o.Id).ToList();
 
-                return Ok(orderIds);
-            }
-            catch (Exception ex)
+        [HttpGet("[Action]")]
+        public async Task<IActionResult> GetProcessingOrdersStaff()
+        {
+            var processedingOrders = await _context.Orders
+                .Where(o => o.Process == false && o.Paid == true)
+                .Select(o => new
+                {
+                    o.Id,
+                    OrderItems = o.OrderItems.Select(oi => new
+                    {
+                        oi.MenuName,
+                        oi.Quantity
+                    }).ToList()
+                })
+                .ToListAsync();
+
+            if (!processedingOrders.Any())
             {
-                return StatusCode(500, $"Serverda xatolik yuz berdi: {ex.Message}");
+                return NotFound("Buyurtma mavjud emas.");
             }
+
+            return Ok(processedingOrders);
         }
+
+
         [HttpGet("[Action]")]
         public IActionResult GetProcessingOrders()
         {
             try
             {
-                var processedingOrders = _context.Orders.Where(o => o.Process == false).ToList();
+                var processedingOrders = _context.Orders.Where(o => o.Process == false && o.Paid == true).ToList();
                 if (!processedingOrders.Any())
                 {
                     return NotFound("Burutma mavjud emas.");

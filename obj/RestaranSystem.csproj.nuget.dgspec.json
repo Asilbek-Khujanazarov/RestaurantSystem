@@ -1,25 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\RestaurantManagementSystem\\RestaranSystem\\RestaranSystem.csproj": {}
+    "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\RestaranSystem.csproj": {}
   },
   "projects": {
-    "D:\\RestaurantManagementSystem\\RestaranSystem\\RestaranSystem.csproj": {
+    "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\RestaranSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RestaurantManagementSystem\\RestaranSystem\\RestaranSystem.csproj",
+        "projectUniqueName": "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\RestaranSystem.csproj",
         "projectName": "RestaranSystem",
-        "projectPath": "D:\\RestaurantManagementSystem\\RestaranSystem\\RestaranSystem.csproj",
+        "projectPath": "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\RestaranSystem.csproj",
         "packagesPath": "C:\\Users\\asilb\\.nuget\\packages\\",
-        "outputPath": "D:\\RestaurantManagementSystem\\RestaranSystem\\obj\\",
+        "outputPath": "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\asilb\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\asilb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -36,7 +43,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -84,6 +91,10 @@
               "target": "Package",
               "version": "[9.0.0, )"
             },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[47.1.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[7.1.0, )"
@@ -108,7 +119,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

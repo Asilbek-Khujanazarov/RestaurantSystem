@@ -1,20 +1,56 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\5db59241-0d20-44ef-9dc4-a23a62fa7d06_Screenshot 2024-10-24 111358.png",
-      "PackagePath": "staticwebassets\\images\\5db59241-0d20-44ef-9dc4-a23a62fa7d06_Screenshot 2024-10-24 111358.png"
+      "Id": "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\wwwroot\\images\\Screenshot (1).png",
+      "PackagePath": "staticwebassets\\images\\Screenshot (1).png"
     },
     {
-      "Id": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\Screenshot (3).png",
-      "PackagePath": "staticwebassets\\images\\Screenshot (3).png"
+      "Id": "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\wwwroot\\images\\Screenshot (10).png",
+      "PackagePath": "staticwebassets\\images\\Screenshot (10).png"
     },
     {
-      "Id": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\a6b32885-9e98-43d8-a77d-f62692fe0e53_Screenshot 2024-10-24 111358.png",
-      "PackagePath": "staticwebassets\\images\\a6b32885-9e98-43d8-a77d-f62692fe0e53_Screenshot 2024-10-24 111358.png"
+      "Id": "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\wwwroot\\images\\Screenshot (2).png",
+      "PackagePath": "staticwebassets\\images\\Screenshot (2).png"
     },
     {
-      "Id": "C:\\Users\\asilb\\Desktop\\RestaurantManagementSystem\\RestaurantManagementSystem\\RestaranSystem\\wwwroot\\images\\ce476ab9-966e-4762-8375-b2f4366bf152_Screenshot (2).png",
-      "PackagePath": "staticwebassets\\images\\ce476ab9-966e-4762-8375-b2f4366bf152_Screenshot (2).png"
+      "Id": "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\wwwroot\\images\\Screenshot (4).png",
+      "PackagePath": "staticwebassets\\images\\Screenshot (4).png"
+    },
+    {
+      "Id": "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\wwwroot\\images\\Screenshot (6).png",
+      "PackagePath": "staticwebassets\\images\\Screenshot (6).png"
+    },
+    {
+      "Id": "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\wwwroot\\menu-images\\125ebef7-e3a4-4828-9489-8786997ee293.png",
+      "PackagePath": "staticwebassets\\menu-images\\125ebef7-e3a4-4828-9489-8786997ee293.png"
+    },
+    {
+      "Id": "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\wwwroot\\menu-images\\160a22b6-2ba0-4f80-a6b9-9cb071b1ce36.png",
+      "PackagePath": "staticwebassets\\menu-images\\160a22b6-2ba0-4f80-a6b9-9cb071b1ce36.png"
+    },
+    {
+      "Id": "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\wwwroot\\menu-images\\4535b119-fce9-47fa-8a39-0768a896d398.png",
+      "PackagePath": "staticwebassets\\menu-images\\4535b119-fce9-47fa-8a39-0768a896d398.png"
+    },
+    {
+      "Id": "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\wwwroot\\menu-images\\4faaf3bb-a371-445f-86a4-0df803755cf2.jpg",
+      "PackagePath": "staticwebassets\\menu-images\\4faaf3bb-a371-445f-86a4-0df803755cf2.jpg"
+    },
+    {
+      "Id": "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\wwwroot\\menu-images\\562ed65c-0768-4ee2-9585-71ce0c32f75a.png",
+      "PackagePath": "staticwebassets\\menu-images\\562ed65c-0768-4ee2-9585-71ce0c32f75a.png"
+    },
+    {
+      "Id": "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\wwwroot\\menu-images\\9015c987-96a3-4463-8f0e-b50176831a77.png",
+      "PackagePath": "staticwebassets\\menu-images\\9015c987-96a3-4463-8f0e-b50176831a77.png"
+    },
+    {
+      "Id": "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\wwwroot\\menu-images\\a127a9c4-0d97-4d15-8584-b310b2018d6e.png",
+      "PackagePath": "staticwebassets\\menu-images\\a127a9c4-0d97-4d15-8584-b310b2018d6e.png"
+    },
+    {
+      "Id": "E:\\Local Memory\\Projects\\RestaurantManagementSystem3434\\RestaranSystem\\wwwroot\\menu-images\\d5608f3f-6c5d-4944-b6ed-05bdfbf1da8c.png",
+      "PackagePath": "staticwebassets\\menu-images\\d5608f3f-6c5d-4944-b6ed-05bdfbf1da8c.png"
     },
     {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.RestaranSystem.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

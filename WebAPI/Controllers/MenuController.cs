@@ -26,13 +26,21 @@ public class MenuController : ControllerBase
     }
 
     [HttpPost("CreateMenu")]
-    [Authorize(Roles = "GeniralStaff")]
+    // [Authorize(Roles = "GeniralStaff")]
     public async Task<IActionResult> CreateMenu([FromBody] Menu menu)
     {
         if (menu == null)
         {
             return BadRequest("Menu ma'lumotlari noto'g'ri.");
         }
+
+        // CategorieId ning mavjudligini tekshirish
+        var categoryExists = await _context.Categories.FindAsync(menu.CategorieId);
+        if (categoryExists == null)
+        {
+            return NotFound("Category not found");
+        }
+        menu.Categorie = null;
 
         if (menu.Sizes != null && menu.Sizes.Count > 0)
         {
@@ -59,6 +67,50 @@ public class MenuController : ControllerBase
     }
 
 
+    [HttpPost("{menuId}/UploadImages")]
+    public async Task<IActionResult> UploadImages(int menuId, List<IFormFile> files)
+    {
+        var menu = await _context.Menus.FindAsync(menuId);
+        if (menu == null)
+        {
+            return NotFound($"Menu ID {menuId} topilmadi.");
+        }
+
+        var imageUrls = new List<string>();
+        var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "menu-images");
+
+        // Agar katalog mavjud bo'lmasa, yarating
+        if (!Directory.Exists(uploadPath))
+        {
+            Directory.CreateDirectory(uploadPath);
+        }
+
+        foreach (var file in files)
+        {
+            if (file.Length > 0)
+            {
+                var fileName = $"{Guid.NewGuid()}{Path.GetExtension(file.FileName)}";
+                var filePath = Path.Combine(uploadPath, fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+
+                // Fayl URLini saqlash
+                var imageUrl = $"/menu-images/{fileName}";
+                imageUrls.Add(imageUrl);
+            }
+        }
+
+        // URLlarni menyuga qo'shish
+        menu.ImageUrls.AddRange(imageUrls);
+        await _context.SaveChangesAsync();
+
+        return Ok(new { menu.Id, UploadedImages = imageUrls });
+    }
+
+
     [HttpGet("[Action]")]
     [Authorize(Roles = "Staff,GeniralStaff")]
     public IActionResult GetMenuItemById(int id)
@@ -74,7 +126,7 @@ public class MenuController : ControllerBase
     }
 
     [HttpPut("[Action]")]
-    [Authorize(Roles = "Staff,GeniralStaff")]
+    // [Authorize(Roles = "Staff,GeniralStaff")]
     public IActionResult UpdateMenuItem(int id, [FromBody] MenuUpdateDto menuUpdateDto)
     {
         var existingMenuItem = _context.Menus.FirstOrDefault(m => m.Id == id);
@@ -118,7 +170,7 @@ public class MenuController : ControllerBase
 
 
     [HttpDelete("[Action]")]
-    [Authorize(Roles = "GeniralStaff")]
+    // [Authorize(Roles = "GeniralStaff")]
     public IActionResult DeleteMenu(int id)
     {
         var menuItem = _context.Menus.FirstOrDefault(m => m.Id == id);
